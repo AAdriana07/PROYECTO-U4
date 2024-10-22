@@ -20,13 +20,15 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
 
 // Your web app's Firebase configuration
+//Credenciales del Proyecto
 const firebaseConfig = {
-  apiKey: "AIzaSyCK5Ncqf0HtcvWMfRLrFkSE2lHO2iZuBk8",
-  authDomain: "diario-digital-f5e89.firebaseapp.com",
-  projectId: "diario-digital-f5e89",
-  storageBucket: "diario-digital-f5e89.appspot.com",
-  messagingSenderId: "79394816484",
-  appId: "1:79394816484:web:dbe6ccca980d4cc62787f1",
+  //se cambio
+  apiKey: "AIzaSyAMevh-H9YOW0YxDPAdg_k7uFDx2lCjx34",
+  authDomain: "red-social-ls.firebaseapp.com",
+  projectId: "red-social-ls",
+  storageBucket: "red-social-ls.appspot.com",
+  messagingSenderId: "317274275041",
+  appId: "1:317274275041:web:967c954ec20057cbc38ba0",
 };
 
 // Initialize Firebase

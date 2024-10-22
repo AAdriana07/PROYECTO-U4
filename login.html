@@ -34,124 +34,119 @@
     <script type="module" src="./assets/js/script.js"></script>
   </head>
 
-  <body
-    class="min-vh-100 bg-info d-flex justify-content-center align-items-center"
-  >
-    <main id="main-container" class="p-4">
+  <body class="min-vh-100 d-flex justify-content-center align-items-center">
+    <main id="main-container" class="p-4 container-fluid">
       <!--Formulario de registrarse-->
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div
-              class="card bg-dark text-light"
-              style="width: 20rem; position: relative"
-            >
-              <div class="img-container">
-                <img
-                  src="https://sapeoplewppro.blob.core.windows.net/media/2019/07/mujer-leyendo-sobre-montana-de-libros.jpg"
-                  alt="libros"
-                />
-              </div>
-              <div class="avatar">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
-                  alt="Avatar"
-                  class="rounded-circle"
-                />
-              </div>
-              <div class="text-center mt-5">
-                <h1 class="fs-3">Registrarse</h1>
-              </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+          <div class="card bg-dark text-light">
+            <div class="img-container">
+              <img
+                src="https://sapeoplewppro.blob.core.windows.net/media/2019/07/mujer-leyendo-sobre-montana-de-libros.jpg"
+                alt="libros"
+                class="img-fluid"
+              />
+            </div>
+            <div class="avatar text-center mt-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                alt="Avatar"
+                class="rounded-circle"
+                style="width: 100px; height: 100px"
+              />
+            </div>
+            <div class="text-center mt-5">
+              <h1 class="fs-3">Registrarse</h1>
+            </div>
 
-              <div>
-                <h1 class="mt-4 text-center fs-6">
-                  ¡Se parte de nuestra comunidad!
-                </h1>
-              </div>
-              <div class="card-body p-4">
-                <form id="signin-form">
-                  <div class="mb-3">
-                    <div class="col-auto">
-                      <label for="signin-usuario" class="form-label"
-                        >Username</label
-                      >
-                      <div class="input-group">
-                        <div class="input-group-text">@</div>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="sigup-usuario"
-                          placeholder="Username"
-                        />
-                      </div>
+            <div>
+              <h1 class="mt-4 text-center fs-6">
+                ¡Se parte de nuestra comunidad!
+              </h1>
+            </div>
+            <div class="card-body p-4">
+              <form id="signin-form">
+                <div class="mb-3">
+                  <div class="col-auto">
+                    <label for="signin-usuario" class="form-label"
+                      >Username</label
+                    >
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="sigup-usuario"
+                        placeholder="Username"
+                      />
                     </div>
                   </div>
+                </div>
 
-                  <div class="mb-3">
-                    <div class="col-auto">
-                      <label for="signup-email" class="form-label"
-                        >Correo</label
-                      >
-                      <div class="input-group">
-                        <div class="input-group-text">@</div>
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="example@correo.com"
-                          id="signin-email"
-                        />
-                      </div>
+                <div class="mb-3">
+                  <div class="col-auto">
+                    <label for="signup-email" class="form-label">Correo</label>
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="example@correo.com"
+                        id="signin-email"
+                      />
                     </div>
                   </div>
+                </div>
 
-                  <!--Contraseña-->
-                  <div class="mb-3">
-                    <div class="col-auto">
-                      <label for="signin-password" class="form-label"
-                        >Contraseña</label
-                      >
-                      <div class="input-group">
-                        <div class="input-group-text">C</div>
-                        <input
-                          type="password"
-                          class="form-control"
-                          placeholder="•••••••••"
-                          id="signin-password"
-                          aria-describedby="passwordHelpInline"
-                        />
-                      </div>
+                <!--Contraseña-->
+                <div class="mb-3">
+                  <div class="col-auto">
+                    <label for="signin-password" class="form-label"
+                      >Contraseña</label
+                    >
+                    <div class="input-group">
+                      <div class="input-group-text">C</div>
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="•••••••••"
+                        id="signin-password"
+                        aria-describedby="passwordHelpInline"
+                      />
                     </div>
                   </div>
+                </div>
 
-                  <div class="mb-3">
-                    <div class="col-auto">
-                      <label for="signin-repassword" class="form-label"
-                        >Confirmar contraseña</label
-                      >
-                      <div class="input-group">
-                        <div class="input-group-text">C</div>
-                        <input
-                          type="password"
-                          class="form-control"
-                          placeholder="•••••••••"
-                          id="signin-repassword"
-                          aria-describedby="passwordHelpInline"
-                        />
-                      </div>
+                <div class="mb-3">
+                  <div class="col-auto">
+                    <label for="signin-repassword" class="form-label"
+                      >Confirmar contraseña</label
+                    >
+                    <div class="input-group">
+                      <div class="input-group-text">C</div>
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="•••••••••"
+                        id="signin-repassword"
+                        aria-describedby="passwordHelpInline"
+                      />
                     </div>
                   </div>
+                </div>
 
-                  <hr />
-                  <div class="text-center">
-                    <input
-                      type="submit"
-                      class="btn btn-primary"
-                      value="Registrarse"
-                    />
-                  </div>
-                  <div><a href="" class="iniciar">Iniciar sesión</a></div>
-                </form>
-              </div>
+                <hr />
+                <div class="text-center">
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-100"
+                    value="Registrarse"
+                  />
+                </div>
+                <div class="session text-center mt-3">
+                  <a href="" class="iniciar">Iniciar sesión</a>
+                </div>
+              </form>
             </div>
           </div>
         </div>

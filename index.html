@@ -200,60 +200,158 @@
         aria-hidden="true"
       >
         <div class="modal-dialog">
-          <div class="modal-content bg-dark text-light">
+          <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Registrarse
-              </h1>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <form id="signup-form">
-                <div class="mb-3">
-                  <label for="signup-name" class="form-label"
-                    >Nombre Completo</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Ingresa tu nombre"
-                    id="signup-name"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="signup-email" class="form-label">Correo</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="correo@ejemplo.com"
-                    id="signup-email"
-                  />
-                </div>
-                <div class="mb-4">
-                  <label for="signup-password" class="form-label"
-                    >Contraseña</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="signup-password"
-                  />
-                </div>
+              <main id="main-container" class="p-4 container-fluid">
+                <!-- Contenedor que incluye tanto el formulario como la bienvenida -->
+                <div
+                  class="d-flex flex-column flex-lg-row align-items-center justify-content-between"
+                >
+                  <!--Formulario de registrarse-->
+                  <div class="col-12 col-lg-6">
+                    <div class="card bg-dark text-light">
+                      <div class="img-container">
+                        <img
+                          src="https://sapeoplewppro.blob.core.windows.net/media/2019/07/mujer-leyendo-sobre-montana-de-libros.jpg"
+                          alt="libros"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="avatar text-center mt-3">
+                        <img
+                          src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                          alt="Avatar"
+                          class="rounded-circle"
+                          style="width: 100px; height: 100px"
+                        />
+                      </div>
+                      <div class="text-center mt-5">
+                        <h1 class="fs-3">Registrarse</h1>
+                      </div>
 
-                <div>
-                  <input
-                    type="submit"
-                    class="btn btn-primary"
-                    value="Registrarse"
-                  />
+                      <div>
+                        <h1 class="mt-4 text-center fs-6">
+                          ¡Se parte de nuestra comunidad!
+                        </h1>
+                      </div>
+                      <div class="card-body p-4">
+                        <form id="signup-form">
+                          <div class="mb-3">
+                            <div class="col-auto">
+                              <label for="signup-usuario" class="form-label"
+                                >Username</label
+                              >
+                              <div class="input-group">
+                                <div class="input-group-text">
+                                  <i class="bi bi-person-fill"></i>
+                                </div>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="signup-usuario"
+                                  placeholder="Username"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mb-3">
+                            <div class="col-auto">
+                              <label for="signup-email" class="form-label"
+                                >Correo</label
+                              >
+                              <div class="input-group">
+                                <div class="input-group-text">
+                                  <i class="bi bi-envelope-at-fill"></i>
+                                </div>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  placeholder="example@correo.com"
+                                  id="signup-email"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <!--Contraseña-->
+                          <div class="mb-3">
+                            <div class="col-auto">
+                              <label for="signup-password" class="form-label"
+                                >Contraseña</label
+                              >
+                              <div class="input-group">
+                                <div class="input-group-text">
+                                  <i class="bi bi-lock-fill"></i>
+                                </div>
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  placeholder="•••••••••"
+                                  id="signup-password"
+                                  aria-describedby="passwordHelpInline"
+                                />
+                                <div class="input-group-text">
+                                  <i class="bi bi-eye-slash-fill"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mb-3">
+                            <div class="col-auto">
+                              <label for="signup-repassword" class="form-label"
+                                >Confirmar contraseña</label
+                              >
+                              <div class="input-group">
+                                <div class="input-group-text">
+                                  <i class="bi bi-lock-fill"></i>
+                                </div>
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  placeholder="•••••••••"
+                                  id="signup-repassword"
+                                  aria-describedby="passwordHelpInline"
+                                />
+                                <div class="input-group-text">
+                                  <i class="bi bi-eye-slash-fill"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr />
+                          <div class="text-center">
+                            <input
+                              type="submit"
+                              class="btn btn-primary w-100"
+                              value="Registrarse"
+                            />
+                          </div>
+                          <div class="session text-center mt-3">
+                            <a href="" class="iniciar">Iniciar sesión</a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Bienvenida -->
+                  <div
+                    class="col-12 col-lg-6 ms-lg-4 mt-4 mt-lg-0 bienvenida text-dark p-4"
+                  >
+                    <h1>¡Bienvenidas a nuestra red social!</h1>
+                    <h2>Sumérjanse en el mundo de los libros</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Inventore totam laboriosam ab magnam, excepturi
+                      consequatur impedit nisi, sint sequi quidem facere omnis
+                      quos repellat nemo voluptate molestias quo odio alias.
+                    </p>
+                  </div>
                 </div>
-              </form>
+              </main>
             </div>
           </div>
         </div>

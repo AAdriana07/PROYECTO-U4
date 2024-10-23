@@ -96,3 +96,8 @@ h1 {
 }
 
 /*100vh*/
+
+btn-close {
+  flex-direction: row;
+  align-items: flex-start;
+}

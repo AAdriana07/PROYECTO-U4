@@ -293,7 +293,10 @@
                                   aria-describedby="passwordHelpInline"
                                 />
                                 <div class="input-group-text">
-                                  <i class="bi bi-eye-slash-fill"></i>
+                                  <i
+                                    class="bi bi-eye-slash-fill"
+                                    id="see-password"
+                                  ></i>
                                 </div>
                               </div>
                             </div>
@@ -301,7 +304,7 @@
 
                           <div class="mb-3">
                             <div class="col-auto">
-                              <label for="signup-repassword" class="form-label"
+                              <label for="confirm-password" class="form-label"
                                 >Confirmar contraseña</label
                               >
                               <div class="input-group">
@@ -311,12 +314,14 @@
                                 <input
                                   type="password"
                                   class="form-control"
-                                  placeholder="•••••••••"
-                                  id="signup-repassword"
+                                  placeholder="Confirmar contraseña"
+                                  id="confirm-password"
                                   aria-describedby="passwordHelpInline"
                                 />
                                 <div class="input-group-text">
-                                  <i class="bi bi-eye-slash-fill"></i>
+                                  <i
+                                    class="see2-password bi bi-eye-slash-fill"
+                                  ></i>
                                 </div>
                               </div>
                             </div>
@@ -342,6 +347,13 @@
                   <div
                     class="col-12 col-lg-6 ms-lg-4 mt-4 mt-lg-0 bienvenida text-dark p-4"
                   >
+                    <button
+                      type="button"
+                      class="btn-close btn-close-dark"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+
                     <h1>¡Bienvenidas a nuestra red social!</h1>
                     <h2>Sumérjanse en el mundo de los libros</h2>
                     <p>

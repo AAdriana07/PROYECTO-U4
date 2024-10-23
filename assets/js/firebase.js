@@ -3,11 +3,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/fireba
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+//Autenticacion
 import {
   getAuth,
   updateProfile,
 } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
-
+//Firestore
 import {
   getFirestore,
   collection,
@@ -37,7 +38,7 @@ export const app = initializeApp(firebaseConfig);
 // Initialize Firebase Authentication and get a reference to the service
 export const auth = getAuth(app);
 
-// Initialize Firestore
+// Initialize Firestore - base de datos
 export const db = getFirestore();
 
 // Operaciones CRUD

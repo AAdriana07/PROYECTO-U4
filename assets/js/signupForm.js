@@ -13,41 +13,45 @@ signUpForm.addEventListener("submit", async (e) => {
   const email = signUpForm["signup-email"].value;
   const password = signUpForm["signup-password"].value;
   const displayName = signUpForm["signup-name"].value;
+  const confirmPassword = signUpForm["confirm-password"].value;
+  const seePassword = document.getElementById("see-password");
 
-  // Menejo de errores
-  try {
-    const userCredentials = await createUserWithEmailAndPassword(
-      auth,
-      email,
-      password
-    );
+  if (password === confirmPassword) {
+    // Menejo de errores
+    try {
+      const userCredentials = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
 
-    //Actualizar perfil
-    await updateProfile(auth.currentUser, {
-      displayName,
-    });
-    //Mostrar menzaje de exito
-    showMessage("Usuario resgistrado", "success");
+      //Actualizar perfil
+      await updateProfile(auth.currentUser, {
+        displayName,
+      });
+      //Mostrar menzaje de exito
+      showMessage("Usuario resgistrado", "success");
 
-    //Cerrar el modal
-    const signupModal = document.querySelector("#signup-modal");
-    const modal = bootstrap.Modal.getInstance(signupModal);
-    modal.hide();
+      //Cerrar el modal
+      const signupModal = document.querySelector("#signup-modal");
+      const modal = bootstrap.Modal.getInstance(signupModal);
+      modal.hide();
 
-    //Limpiar el formulario
-    signUpForm.reset();
-  } catch (error) {
-    //Registro fallido
-    console.log(error);
-    //Mostrar menzaje de error
-    if (error.code === "auth/email-already-in-use") {
-      showMessage("El correo ya está en uso", "error");
-    } else if (error.code === "auth/invalid-email") {
-      showMessage("El correo es inválido", "error");
-    } else if (error.code === "auth/weak-password") {
-      showMessage("La contraseña debe tener más de 5 digitos", "error");
-    } else {
-      showMessage(error.code, "error");
+      //Limpiar el formulario
+      signUpForm.reset();
+    } catch (error) {
+      //Registro fallido
+      console.log(error);
+      //Mostrar menzaje de error
+      if (error.code === "auth/email-already-in-use") {
+        showMessage("El correo ya está en uso", "error");
+      } else if (error.code === "auth/invalid-email") {
+        showMessage("El correo es inválido", "error");
+      } else if (error.code === "auth/weak-password") {
+        showMessage("La contraseña debe tener más de 5 digitos", "error");
+      } else {
+        showMessage(error.code, "error");
+      }
     }
   }
 });

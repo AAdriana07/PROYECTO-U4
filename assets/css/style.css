@@ -96,13 +96,15 @@ hr {
 
 @media (min-width: 991px) {
   .modal-dialog {
-    max-width: 70%;
+    max-width: 1300px;
+    width: 70%;
     min-width: 30px;
   }
 
   .modal-content {
-    padding: 7%;
+    padding: 2% 7%;
   }
+
   .modal-header {
     padding: 0px;
     margin-bottom: 0;
@@ -111,11 +113,12 @@ hr {
   .avatar {
     width: 100%;
     position: absolute;
-    bottom: 460px;
+    bottom: 485px;
   }
+
   .avatar img {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     border: 9px solid #1f1e1e;
   }
 
@@ -125,7 +128,7 @@ hr {
   }
 
   .registrarse {
-    margin: 44px 0 0;
+    margin: 47px 0 0;
   }
 
   .img-container {
@@ -144,6 +147,7 @@ hr {
   .modal-content {
     padding: 6% 14%;
   }
+
   .modal-header {
     padding: 0px;
   }
@@ -151,7 +155,7 @@ hr {
   .avatar {
     width: 100%;
     position: absolute;
-    bottom: 460px;
+    bottom: 480px;
   }
   .avatar img {
     width: 70px;
@@ -196,7 +200,7 @@ hr {
   .avatar {
     width: 100%;
     position: absolute;
-    bottom: 450px;
+    bottom: 475px;
   }
   .avatar img {
     width: 70px;

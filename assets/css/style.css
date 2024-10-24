@@ -101,20 +101,17 @@ hr {
   }
 
   .modal-content {
-    padding: 20px;
+    padding: 7%;
   }
   .modal-header {
     padding: 0px;
-  }
-
-  .card-contenido {
-    padding: 100px;
+    margin-bottom: 0;
   }
 
   .avatar {
     width: 100%;
     position: absolute;
-    bottom: 450px;
+    bottom: 460px;
   }
   .avatar img {
     width: 70px;
@@ -125,7 +122,6 @@ hr {
   hr {
     border: 1px solid #ffffff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.99);
-    width: 90%;
   }
 
   .registrarse {
@@ -155,7 +151,7 @@ hr {
   .avatar {
     width: 100%;
     position: absolute;
-    bottom: 450px;
+    bottom: 460px;
   }
   .avatar img {
     width: 70px;
@@ -177,6 +173,10 @@ hr {
     width: 100%;
     height: 120px;
     overflow: hidden;
+  }
+
+  .content {
+    padding: 0 7%;
   }
 }
 
@@ -218,6 +218,10 @@ hr {
     width: 100%;
     height: 120px;
     overflow: hidden;
+  }
+
+  .content {
+    padding: 0;
   }
 }
 

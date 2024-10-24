@@ -94,9 +94,9 @@ hr {
   display: flex;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 991px) {
   .modal-dialog {
-    max-width: 900px;
+    max-width: 70%;
     min-width: 30px;
   }
 
@@ -139,7 +139,7 @@ hr {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .modal-dialog {
     max-width: 70%;
     min-width: 100px;

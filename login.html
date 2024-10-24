@@ -34,157 +34,161 @@
     <script type="module" src="./assets/js/script.js"></script>
   </head>
 
-  <body class="min-vh-100 d-flex justify-content-center align-items-center">
-    <main id="main-container" class="p-4 container-fluid">
-      <!--Formulario de registrarse-->
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-          <div class="card bg-dark text-light">
-            <div class="img-container">
-              <img
-                src="https://sapeoplewppro.blob.core.windows.net/media/2019/07/mujer-leyendo-sobre-montana-de-libros.jpg"
-                alt="libros"
-                class="img-fluid"
-              />
-            </div>
-            <div class="avatar text-center mt-3">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
-                alt="Avatar"
-                class="rounded-circle"
-                style="width: 100px; height: 100px"
-              />
-            </div>
-            <div class="text-center mt-5">
-              <h1 class="fs-3">Registrarse</h1>
-            </div>
+  <body>
+    <body class="min-vh-100 d-flex justify-content-center align-items-center">
+      <main id="main-container" class="p-4 container-fluid">
+        <!--Formulario de registrarse-->
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+            <div class="card bg-dark text-light">
+              <div class="img-container">
+                <img
+                  src="https://sapeoplewppro.blob.core.windows.net/media/2019/07/mujer-leyendo-sobre-montana-de-libros.jpg"
+                  alt="libros"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="avatar text-center mt-3">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                  alt="Avatar"
+                  class="rounded-circle"
+                  style="width: 100px; height: 100px"
+                />
+              </div>
+              <div class="text-center mt-5">
+                <h1 class="fs-3">Registrarse</h1>
+              </div>
 
-            <div>
-              <h1 class="mt-4 text-center fs-6">
-                ¡Se parte de nuestra comunidad!
-              </h1>
-            </div>
-            <div class="card-body p-4">
-              <form id="signin-form">
-                <div class="mb-3">
-                  <div class="col-auto">
-                    <label for="signin-usuario" class="form-label"
-                      >Username</label
-                    >
-                    <div class="input-group">
-                      <div class="input-group-text">
-                        <i class="bi bi-person-fill"></i>
-                      </div>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="sigup-usuario"
-                        placeholder="Username"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <div class="col-auto">
-                    <label for="signup-email" class="form-label">Correo</label>
-                    <div class="input-group">
-                      <div class="input-group-text">
-                        <i class="bi bi-envelope-at-fill"></i>
-                      </div>
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="example@correo.com"
-                        id="signin-email"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <!--Contraseña-->
-                <div class="mb-3">
-                  <div class="col-auto">
-                    <label for="signin-password" class="form-label"
-                      >Contraseña</label
-                    >
-                    <div class="input-group">
-                      <div class="input-group-text">
-                        <i class="bi bi-lock-fill"></i>
-                      </div>
-                      <input
-                        type="password"
-                        class="form-control"
-                        placeholder="•••••••••"
-                        id="signin-password"
-                        aria-describedby="passwordHelpInline"
-                      />
-                      <div class="input-group-text">
-                        <i class="bi bi-eye-slash-fill"></i>
-                        <!--<i class="bi bi-eye-fill"></i> -> ojos cerrados -->
+              <div>
+                <h1 class="mt-4 text-center fs-6">
+                  ¡Se parte de nuestra comunidad!
+                </h1>
+              </div>
+              <div class="card-body p-4">
+                <form id="signin-form">
+                  <div class="mb-3">
+                    <div class="col-auto">
+                      <label for="signin-usuario" class="form-label"
+                        >Username</label
+                      >
+                      <div class="input-group">
+                        <div class="input-group-text">
+                          <i class="bi bi-person-fill"></i>
+                        </div>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="sigup-usuario"
+                          placeholder="Username"
+                        />
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="mb-3">
-                  <div class="col-auto">
-                    <label for="signin-repassword" class="form-label"
-                      >Confirmar contraseña</label
-                    >
-                    <div class="input-group">
-                      <div class="input-group-text">
-                        <i class="bi bi-lock-fill"></i>
-                      </div>
-                      <input
-                        type="password"
-                        class="form-control"
-                        placeholder="•••••••••"
-                        id="signin-repassword"
-                        aria-describedby="passwordHelpInline"
-                      />
-                      <div class="input-group-text">
-                        <i class="bi bi-eye-slash-fill"></i>
-                        <!--<i class="bi bi-eye-fill"></i> -> ojos cerrados -->
+                  <div class="mb-3">
+                    <div class="col-auto">
+                      <label for="signup-email" class="form-label"
+                        >Correo</label
+                      >
+                      <div class="input-group">
+                        <div class="input-group-text">
+                          <i class="bi bi-envelope-at-fill"></i>
+                        </div>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="example@correo.com"
+                          id="signin-email"
+                        />
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <hr />
-                <div class="text-center">
-                  <input
-                    type="submit"
-                    class="btn btn-primary w-100"
-                    value="Registrarse"
-                  />
-                </div>
-                <div class="session text-center mt-3">
-                  <a href="" class="iniciar">Iniciar sesión</a>
-                </div>
-              </form>
+                  <!--Contraseña-->
+                  <div class="mb-3">
+                    <div class="col-auto">
+                      <label for="signin-password" class="form-label"
+                        >Contraseña</label
+                      >
+                      <div class="input-group">
+                        <div class="input-group-text">
+                          <i class="bi bi-lock-fill"></i>
+                        </div>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="•••••••••"
+                          id="signin-password"
+                          aria-describedby="passwordHelpInline"
+                        />
+                        <div class="input-group-text">
+                          <i class="bi bi-eye-slash-fill"></i>
+                          <!--<i class="bi bi-eye-fill"></i> -> ojos cerrados -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <div class="col-auto">
+                      <label for="signin-repassword" class="form-label"
+                        >Confirmar contraseña</label
+                      >
+                      <div class="input-group">
+                        <div class="input-group-text">
+                          <i class="bi bi-lock-fill"></i>
+                        </div>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="•••••••••"
+                          id="signin-repassword"
+                          aria-describedby="passwordHelpInline"
+                        />
+                        <div class="input-group-text">
+                          <i class="bi bi-eye-slash-fill"></i>
+                          <!--<i class="bi bi-eye-fill"></i> -> ojos cerrados -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr />
+                  <div class="text-center">
+                    <input
+                      type="submit"
+                      class="btn btn-primary w-100"
+                      value="Registrarse"
+                    />
+                  </div>
+                  <div class="session text-center mt-3">
+                    <a href="" class="iniciar">Iniciar sesión</a>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <!--
-    OJITO ABIERTO 
-    <i class="bi bi-eye"></i>
-    
-    OJITO CERRADO
-    <i class="bi bi-eye-slash"></i>
-    -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!--TOASTIFY CDNNNNNNNNN-->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/toastify-js"
-    ></script>
+      <!--
+      OJITO ABIERTO 
+      <i class="bi bi-eye"></i>
+      
+      OJITO CERRADO
+      <i class="bi bi-eye-slash"></i>
+      -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+      <!--TOASTIFY CDNNNNNNNNN-->
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/toastify-js"
+      ></script>
+    </body>
   </body>
 </html>

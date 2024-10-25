@@ -8,7 +8,7 @@ import {
 import { showMessage } from "./toastMessage.js";
 
 const taskForm = document.querySelector("#task-form");
-const tasksContainer = document.querySelector("#tasks-container");
+const tasksContainer = document.querySelector("#session-two");
 
 // Variables para la edición
 let editStatus = false;
@@ -81,7 +81,7 @@ export const setupTasks = (user) => {
         <header class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center gap-3">
             <img class="task-profile-picture rounded-circle" src="${
-              data.userImage ? data.userImage : "./assets/img/koala.png"
+              data.userImage ? data.userImage : "./assets/img/icono.png"
             }" alt="${data.userName}" />
             <p class="m-0">${data.userName}</p>
             <p class="m-0 gap-5">${data.timeData}</p>

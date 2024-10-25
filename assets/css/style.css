@@ -94,6 +94,10 @@ hr {
   display: flex;
 }
 
+.bi {
+  cursor: pointer;
+}
+
 @media (min-width: 991px) {
   .modal-dialog {
     max-width: 1300px;

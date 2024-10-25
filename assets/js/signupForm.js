@@ -14,7 +14,6 @@ signUpForm.addEventListener("submit", async (e) => {
   const password = signUpForm["signup-password"].value;
   const displayName = signUpForm["signup-name"].value;
   const confirmPassword = signUpForm["confirm-password"].value;
-  const seePassword = document.getElementById("see-password");
 
   if (password === confirmPassword) {
     // Menejo de errores
@@ -53,5 +52,7 @@ signUpForm.addEventListener("submit", async (e) => {
         showMessage(error.code, "error");
       }
     }
+  } else {
+    showMessage("Las contraseñas no coinciden", "error");
   }
 });

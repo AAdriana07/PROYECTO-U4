@@ -29,51 +29,54 @@
     <script type="module" src="./assets/js/password.js"></script>
   </head>
   <body>
-    <body class="min-vh-100 bg-dark">
-      <header>
-        <nav class="navbar navbar-expand-lg bg-black navbar-dark">
-          <div class="container-fluid px-4">
-            <a class="navbar-brand" href="index.html">LITERATURE AND TEA</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item logged-out">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#signin-modal"
-                    >Iniciar Sesión</a
-                  >
-                </li>
-                <li class="nav-item logged-out">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#signup-modal"
-                    >Registrarse</a
-                  >
-                </li>
-                <li class="nav-item logged-in">
-                  <a class="nav-link" id="logout" href="#">Cerrar Sesión</a>
-                </li>
-              </ul>
-            </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+        <div class="container-fluid px-4">
+          <a class="navbar-brand" href="index.html"
+            ><i class="bi bi-bookmark-heart-fill"></i> LITERATURE AND TEA</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item logged-out">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signin-modal"
+                  >Iniciar Sesión</a
+                >
+              </li>
+              <li class="nav-item logged-out">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signup-modal"
+                  >Registrarse</a
+                >
+              </li>
+              <li class="nav-item logged-in">
+                <a class="nav-link" id="logout" href="#"
+                  ><i class="bi bi-arrow-bar-left"></i>Cerrar Sesión</a
+                >
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
-
+        </div>
+      </nav>
+    </header>
+    <body class="min-vh-100 bg-dark">
       <!--Página principal-->
       <div class="general text-dark">
         <div class="session-one">

@@ -83,7 +83,9 @@ export const setupTasks = (user) => {
             <img class="task-profile-picture rounded-circle" src="${
               data.userImage ? data.userImage : "./assets/img/icono.png"
             }" alt="${data.userName}" />
+            <i class="bi bi-chat-square-text"></i>
             <p class="m-0">${data.userName}</p>
+            <i class="bi bi-globe"></i>
             <p class="m-0 gap-5">${data.timeData}</p>
           </div>
           ${

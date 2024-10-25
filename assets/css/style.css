@@ -8,9 +8,16 @@ html {
   font-size: 62.5%;
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
 .general {
   background-color: aliceblue;
   color: black;
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 2%;

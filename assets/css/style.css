@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +13,31 @@ html {
   font-size: 62.5%;
 }
 
+.title > h1 {
+  font-family: "Chewy", system-ui;
+  font-size: 30px;
+}
+
+.subtitle2 > h2 {
+  font-family: "Merienda", cursive;
+  font-size: 17px;
+}
+
+.word > p {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 1000;
 }
 
+.text {
+  text-align: center;
+}
 .general {
   background-color: aliceblue;
   color: black;
@@ -115,6 +139,11 @@ hr {
 }
 
 /* Ajustes del avatar */
+.img-avatar {
+  width: 100px;
+  height: 100px;
+}
+
 .avatar img {
   width: 120px;
   height: 120px;

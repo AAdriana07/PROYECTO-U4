@@ -77,8 +77,8 @@ export const setupTasks = (user) => {
       const data = doc.data();
 
       tasksHtml += `
-      <article class="task-container border border-2 rounded-2 p-3 my-3">
-        <header class="d-flex justify-content-between align-items-center">
+      <article class="task-container p-3 my-3">
+        <header class="usuario d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center gap-3">
             <img class="task-profile-picture rounded-circle" src="${
               data.userImage ? data.userImage : "./assets/img/icono.png"

@@ -151,107 +151,101 @@
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog">
-          <div class="modal-content color-modal text-light">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content color-modal text-light container-modal">
             <div class="modal-header">
               <div id="main-container" class="p-4 container-fluid">
                 <div>
                   <button
                     type="button"
-                    class="btn-close btn-close-white"
+                    class="btn-close m-3"
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   ></button>
                 </div>
-                <div
-                  class="d-flex flex-column flex-lg-row align-items-center justify-content-between"
-                >
-                  <div class="col-12 col-lg-6">
-                    <div class="card bg-dark text-light">
-                      <div class="img-container">
-                        <img
-                          src="https://sapeoplewppro.blob.core.windows.net/media/2019/07/mujer-leyendo-sobre-montana-de-libros.jpg"
-                          alt="libros"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="avatar text-center mt-3">
-                        <img
-                          src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
-                          alt="Avatar"
-                          class="rounded-circle"
-                          style="width: 100px; height: 100px"
-                        />
-                      </div>
-                      <div class="text-center">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
-                          Iniciar Sesión
-                        </h1>
-                      </div>
-                      <div class="card-body p-4">
-                        <form id="signin-form" class="content fs-5">
-                          <div class="mb-3">
-                            <div class="col-auto">
-                              <label for="signin-email" class="form-label"
-                                >Correo</label
-                              >
-                              <div class="input-group">
-                                <div class="input-group-text">
-                                  <i class="bi bi-envelope-at-fill"></i>
-                                </div>
-                                <input
-                                  type="email"
-                                  class="form-control"
-                                  placeholder="correo@ejemplo.com"
-                                  id="signin-email"
-                                />
-                              </div>
+                <div class="card mb-3">
+                  <div class="img-container">
+                    <img
+                      src="https://sapeoplewppro.blob.core.windows.net/media/2019/07/mujer-leyendo-sobre-montana-de-libros.jpg"
+                      alt="libros"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="avatar text-center mt-3">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                      alt="Avatar"
+                      class="rounded-circle"
+                      style="width: 100px; height: 100px"
+                    />
+                  </div>
+                  <div class="text-center">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Iniciar Sesión
+                    </h1>
+                  </div>
+                  <div class="card-body p-2 m-3">
+                    <form id="signin-form" class="content fs-5">
+                      <div class="mb-3">
+                        <div class="col-auto">
+                          <label for="signin-email" class="form-label"
+                            >Correo</label
+                          >
+                          <div class="input-group">
+                            <div class="input-group-text">
+                              <i class="bi bi-envelope-at-fill"></i>
                             </div>
-                          </div>
-
-                          <div class="mb-3">
-                            <div class="col-auto">
-                              <label for="signin-password" class="form-label"
-                                >Contraseña</label
-                              >
-                              <div class="input-group">
-                                <div class="input-group-text">
-                                  <i class="bi bi-lock-fill"></i>
-                                </div>
-                                <input
-                                  type="password"
-                                  class="form-control"
-                                  id="signin-password"
-                                  placeholder="Contraseña"
-                                  aria-describedby="passwordHelpInline"
-                                />
-                                <div class="input-group-text">
-                                  <i
-                                    class="bi bi-eye-slash-fill"
-                                    id="toggle-eye"
-                                  ></i>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div>
                             <input
-                              type="submit"
-                              class="btn btn-primary"
-                              value="Iniciar Sesión"
+                              type="email"
+                              class="form-control"
+                              placeholder="correo@ejemplo.com"
+                              id="signin-email"
                             />
                           </div>
-                        </form>
+                        </div>
                       </div>
-                    </div>
+
+                      <div class="mb-3">
+                        <div class="col-auto">
+                          <label for="signin-password" class="form-label"
+                            >Contraseña</label
+                          >
+                          <div class="input-group">
+                            <div class="input-group-text">
+                              <i class="bi bi-lock-fill"></i>
+                            </div>
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="signin-password"
+                              placeholder="Contraseña"
+                              aria-describedby="passwordHelpInline"
+                            />
+                            <div class="input-group-text">
+                              <i
+                                class="bi bi-eye-slash-fill"
+                                id="toggle-eye"
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <input
+                          type="submit"
+                          class="btn btn-primary m-3"
+                          value="Iniciar Sesión"
+                        />
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
             <!--? Button GOOGLE -->
             <div>
-              <button class="btn btn-info" id="google-btn">
+              <button class="btn btn-info m-2" id="google-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"

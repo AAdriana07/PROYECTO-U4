@@ -1,3 +1,31 @@
 /*.color-modal {
   background-color: #a2d2df;
 }*/
+/*
+.container-modal {
+  background-color: #ffe1ff;
+  background-color: #e4b1f0;
+}*/
+.card {
+  color: black;
+  border-radius: 12px;
+  max-width: 420px;
+  background-color: #e4b1f0;
+  background-color: #f8c794;
+  background-color: #ffe0b5;
+  margin: 0 auto;
+}
+
+#signin-modal {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.avatar {
+  top: 35px; /* Ajusta según sea necesario */
+}
+
+.img-fluid {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

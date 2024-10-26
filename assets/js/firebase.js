@@ -20,6 +20,14 @@ import {
   getDoc,
 } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
 
+//AGREGANDO FIREBASE STORAGE
+import {
+  getStorage,
+  ref,
+  uploadBytes,
+  getDownloadURL,
+} from "https://www.gstatic.com/firebasejs/10.14.0/firebase-storage.js";
+
 // Your web app's Firebase configuration
 //Credenciales del Proyecto
 const firebaseConfig = {
@@ -41,6 +49,9 @@ export const auth = getAuth(app);
 // Initialize Firestore - base de datos
 export const db = getFirestore();
 
+//INCIALIZAR STORAGE
+export const storage = getStorage(app);
+//HASTA AQUI
 // Operaciones CRUD
 export const createTask = (
   title,

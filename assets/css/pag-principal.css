@@ -1,0 +1,45 @@
+.general {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding-top: 50px;
+  gap: 2%;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 400px;
+}
+
+.session-one,
+.session-two {
+  flex: 1;
+}
+.session-one {
+  width: 40%;
+}
+
+.session-two {
+  width: 55%;
+}
+
+.task-container {
+  background-color: rgb(30, 29, 29);
+  color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 6px;
+}
+
+@media (min-width: 991px) {
+  .text {
+    padding: 0 45px 0 0;
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 550px) {
+  .general {
+    flex-direction: column;
+  }
+}

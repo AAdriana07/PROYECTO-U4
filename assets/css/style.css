@@ -24,26 +24,6 @@ html {
   padding: 35px;
 }
 
-.general {
-  background-color: aliceblue;
-  color: black;
-  padding-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2%;
-  width: 100%;
-  box-sizing: border-box;
-  min-width: 400px;
-}
-
-.session-one {
-  width: 40%;
-}
-
-.session-two {
-  width: 50%;
-}
-
 .container {
   text-align: center;
   align-items: center;

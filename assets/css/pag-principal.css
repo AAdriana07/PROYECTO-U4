@@ -57,6 +57,12 @@ hr {
   text-align: right;
 }
 
+.card-perfil {
+  padding: 10px;
+  background-color: #fffaf9;
+  border-radius: 6px;
+}
+
 @media (min-width: 991px) {
   .text {
     padding: 0 45px 0 0;

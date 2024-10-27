@@ -3,7 +3,7 @@ import { setupComments } from "./setupComments.js";
 
 const loggedIn = document.querySelectorAll(".logged-in");
 const loggedOut = document.querySelectorAll(".logged-out");
-const mainContainer = document.querySelector("#main-container");
+const feedContainer = document.querySelector("#feed-container");
 const saludo = document.querySelector("#saludo");
 
 export const checkLogin = (user) => {
@@ -13,7 +13,7 @@ export const checkLogin = (user) => {
     loggedOut.forEach((element) => (element.style.display = "none"));
 
     //Mostramos el main conatiner
-    mainContainer.style.display = "block";
+    feedContainer.style.display = "flex";
     saludo.textContent = `Bienvenid@ ${user.email}`;
 
     // Cargamos las tareas
@@ -23,7 +23,7 @@ export const checkLogin = (user) => {
     loggedOut.forEach((element) => (element.style.display = "block"));
     loggedIn.forEach((element) => (element.style.display = "none"));
     //Ocultamos el main container
-    mainContainer.style.display = "none";
+    feedContainer.style.display = "none";
     saludo.textContent = "";
   }
 };

@@ -88,21 +88,21 @@ export const setupTasks = (user) => {
             <i class="bi bi-globe"></i>
             <p class="m-0 gap-5">${data.timeData}</p>
           </div>
-          ${
-            user.email === data.userEmail
-              ? `<div>
-            <button class="btn btn-info btn-editar" data-id="${doc.id}"><i class="bi bi-pencil-fill"></i> Editar</button>
-            <button class="btn btn-danger btn-eliminar" data-id="${doc.id}"><i class="bi bi-trash3-fill"></i> Eliminar</button>
-            <button type="button" class="btn btn-primary btn-comentar" data-id="${doc.id}" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <i class="bi bi-chat-square-dots"></i> Comentar
-            </button>
-          </div>`
-              : `<div></div>`
-          }
         </header>
         <hr />
         <h4>${data.title}</h4>
         <p>${data.description}</p>
+        ${
+          user.email === data.userEmail
+            ? `<hr /> <div class="botones">
+          <button class="btn btn-info btn-editar" data-id="${doc.id}"><i class="bi bi-pencil-fill"></i></button>
+          <button class="btn btn-danger btn-eliminar" data-id="${doc.id}"><i class="bi bi-trash3-fill"></i></button>
+          <button type="button" class="btn btn-primary btn-comentar" data-id="${doc.id}" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-chat-square-dots"></i>
+          </button>
+        </div>`
+            : `<div></div>`
+        }
       </article>
       `;
     });

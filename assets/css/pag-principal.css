@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .general {
   display: flex;
   flex-direction: row;
@@ -13,20 +19,42 @@
 .session-one,
 .session-two {
   flex: 1;
+  background-color: #d3b1c2;
+  margin: 20px;
+  border-radius: 10px;
 }
+/*
 .session-one {
   width: 40%;
 }
 
 .session-two {
   width: 55%;
-}
+}*/
 
 .task-container {
-  background-color: rgb(30, 29, 29);
-  color: #ffffff;
-  border: 2px solid #000;
+  background-color: #fffaf9;
+  color: black;
   border-radius: 6px;
+  margin: 30px;
+}
+
+.card-post {
+  background-color: #fffaf9;
+}
+
+#feed-container {
+  background-color: #ebe6ea;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(3, 3, 3);
+}
+
+.botones {
+  text-align: right;
 }
 
 @media (min-width: 991px) {

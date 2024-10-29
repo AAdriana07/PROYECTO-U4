@@ -133,7 +133,7 @@ export function showComments(postId) {
         <header class="d-flex justify-content-between">
           <div class="d-flex align-items-center gap-3">
             <img class="task-profile-picture rounded-circle" src="${
-              comment.userImage ? comment.userImage : "./assets/img/perfil.png"
+              comment.userImage ? comment.userImage : "./assets/img/icono.png"
             }" alt="${comment.userName}" />
             <p class="m-0">${comment.userName}</p>
             <p class="m-0 gap-5">${comment.timeData}</p>

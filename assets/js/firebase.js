@@ -59,7 +59,8 @@ export const createTask = (
   userName,
   userImage,
   userEmail,
-  timeData
+  timeData,
+  imageUrl
 ) =>
   addDoc(collection(db, "tasks"), {
     title,
@@ -68,6 +69,7 @@ export const createTask = (
     userImage,
     userEmail,
     timeData,
+    imageUrl,
   });
 
 export const onGetTask = (callback) =>
@@ -80,8 +82,6 @@ export const updateTask = (id, newData) =>
 
 export const deleteTask = (id) => deleteDoc(doc(db, "tasks", id));
 
-export { updateProfile };
-
 // * Comentarios
 export const createComments = (
   description,
@@ -89,7 +89,7 @@ export const createComments = (
   userImage,
   userEmail,
   timeData,
-  postId
+  imageUrl
 ) =>
   //TODO Aquí se añade todo lo que quieres que aparezca
   addDoc(collection(db, "comments"), {
@@ -98,7 +98,7 @@ export const createComments = (
     userImage,
     userEmail,
     timeData,
-    postId,
+    imageUrl,
   });
 
 export const onGetComments = (callback) =>
@@ -110,3 +110,14 @@ export const updateComments = (id, newData) =>
   updateDoc(doc(db, "comments", id), newData);
 
 export const deleteComments = (id) => deleteDoc(doc(db, "comments", id));
+
+export { updateProfile };
+
+//STORAGE 28/10
+
+export const uploadImage = async (file) => {
+  const storageRef = ref(storage, `images/${file.name}`);
+  await uploadBytes(storageRef, file);
+  const url = await getDownloadURL(storageRef);
+  return url; //devuelve la url
+};

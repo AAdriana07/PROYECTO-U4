@@ -89,6 +89,7 @@ export const createComments = (
   userImage,
   userEmail,
   timeData,
+  postId,
   imageUrl
 ) =>
   //TODO Aquí se añade todo lo que quieres que aparezca
@@ -98,6 +99,7 @@ export const createComments = (
     userImage,
     userEmail,
     timeData,
+    postId,
     imageUrl,
   });
 

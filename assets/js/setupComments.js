@@ -122,7 +122,11 @@ export const setupComments = (user) => {
 export function showComments(postId) {
   let commentsHtml = "";
 
+  //console.log(`Post id ${postId}`);
+
   commentsData.forEach((comment) => {
+    //console.log(`Post id ${postId} === ${comment.postId}`);
+
     if (comment.postId === postId) {
       commentsHtml += `
       <article class="comment-container border border-2 rounded-2 p-3 my-3 text-light">

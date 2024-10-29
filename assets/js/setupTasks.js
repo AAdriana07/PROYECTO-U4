@@ -84,7 +84,7 @@ export const setupTasks = (user) => {
               data.userImage ? data.userImage : "./assets/img/icono.png"
             }" alt="${data.userName}" />
             <i class="bi bi-chat-square-text"></i>
-            <p class="m-0"></p>
+            <p class="m-0"><b>${data.userName}</b></p>
             <i class="bi bi-globe"></i>
             <p class="m-0 gap-5">${data.timeData}</p>
           </div>

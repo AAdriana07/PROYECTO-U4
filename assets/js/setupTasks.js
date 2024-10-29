@@ -96,13 +96,9 @@ export const setupTasks = (user) => {
             <img class="task-profile-picture rounded-circle" src="${
               data.userImage ? data.userImage : "./assets/img/perfil.png"
             }" alt="${data.userName}" />
-<<<<<<< HEAD
             <i class="bi bi-chat-square-text"></i>
             <p class="m-0"><b>${data.userName}</b></p>
             <i class="bi bi-globe"></i>
-=======
-            <p class="m-0">${data.userName}</p>
->>>>>>> refs/remotes/origin/main
             <p class="m-0 gap-5">${data.timeData}</p>
           </div>
           ${

@@ -80,13 +80,16 @@ export const updateTask = (id, newData) =>
 
 export const deleteTask = (id) => deleteDoc(doc(db, "tasks", id));
 
+export { updateProfile };
+
 // * Comentarios
 export const createComments = (
   description,
   userName,
   userImage,
   userEmail,
-  timeData
+  timeData,
+  postId
 ) =>
   //TODO Aquí se añade todo lo que quieres que aparezca
   addDoc(collection(db, "comments"), {
@@ -95,6 +98,7 @@ export const createComments = (
     userImage,
     userEmail,
     timeData,
+    postId,
   });
 
 export const onGetComments = (callback) =>
@@ -106,5 +110,3 @@ export const updateComments = (id, newData) =>
   updateDoc(doc(db, "comments", id), newData);
 
 export const deleteComments = (id) => deleteDoc(doc(db, "comments", id));
-
-export { updateProfile };

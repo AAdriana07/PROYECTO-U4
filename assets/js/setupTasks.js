@@ -7,8 +7,13 @@ import {
 } from "./firebase.js";
 import { showMessage } from "./toastMessage.js";
 
+// STORAGE 28/20
+import { uploadImage } from "./firebase.js";
+
 const taskForm = document.querySelector("#task-form");
 const tasksContainer = document.querySelector("#session-two");
+// STORAGE 28/20
+const imageInput = document.querySelector("#image-input"); // Añade un input para la imagen
 
 // Variables para la edición
 let editStatus = false;
@@ -25,7 +30,13 @@ export const setupTasks = (user) => {
     // Obtener los datos del formulario
     const title = taskForm["title"].value;
     const description = taskForm["description"].value;
+    //STORAGE 28/10
 
+    let imageUrl = "";
+    if (imageInput.files.length > 0) {
+      const imageFile = imageInput.files[0];
+      imageUrl = await uploadImage(imageFile); // Sube la imagen y guarda la URL
+    }
     // Crear una nueva tarea
     try {
       const timeData = new Date().toLocaleString("es-PE", {
@@ -39,14 +50,16 @@ export const setupTasks = (user) => {
           user.displayName,
           user.photoURL,
           user.email,
-          timeData
+          timeData,
+          //STORAGE 28/10
+          imageUrl //Guarda la URL de la imagen en la BD
         );
         // Mostrar mensaje de éxito
         showMessage("Tarea creada", "success");
         // Limpiar el formulario
       } else {
         // Actualizar tarea
-        await updateTask(editId, { title, description, timeData });
+        await updateTask(editId, { title, description, timeData, imageUrl });
         // Mostrar mensaje de éxito
         showMessage("Tarea actualizada", "success");
 
@@ -103,6 +116,12 @@ export const setupTasks = (user) => {
         <hr />
         <h4>${data.title}</h4>
         <p>${data.description}</p>
+        <!--STORAGE 28/10}-->
+        ${
+          data.imageUrl
+            ? `<img src="${data.imageUrl}" alt="Tarea imagen" class="task-image" />`
+            : ""
+        }
       </article>
       `;
     });

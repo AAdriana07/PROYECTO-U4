@@ -36,6 +36,7 @@
           <a class="navbar-brand" href="index.html"
             ><i class="bi bi-bookmark-heart-fill"></i> LITERATURE AND TEA</a
           >
+<<<<<<< HEAD
           <button
             class="navbar-toggler"
             type="button"
@@ -73,6 +74,66 @@
                 >
               </li>
             </ul>
+=======
+            <div class="mb-3">
+              <h4 id="form-title">Agregar una nueva tarea</h4>
+            </div>
+            <hr />
+            <div class="mb-3">
+              <label for="title" class="form-label">Título</label>
+              <input
+                type="text"
+                class="form-control"
+                id="title"
+                placeholder="Nombre de la tarea..."
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="description" class="form-label">Descripción</label>
+              <textarea
+                class="form-control"
+                rows="3"
+                id="description"
+                placeholder="Hoy haré..."
+                required
+              ></textarea>
+            </div>
+            
+            <!--SE AGREGARON ESTOS CAMBIOS PARA EL FIREBASE STORAGE-->
+            <!--STORAGEEEEEEEEEEE-->
+            <div class="mb-3">
+              <label for="file-input" class="form-label text-light"
+                >Selecciona una imagen</label
+              >
+              <input
+                type="file"
+                class="form-control"
+                id="file-input"
+                accept="image/*"
+                required
+              />
+            </div>
+            <hr />
+
+            <div class="mb-1">
+              <input
+                type="submit"
+                value="Crear tarea"
+                id="btn-agregar"
+                class="btn btn-primary"
+              />
+            </div>
+          </form>
+
+          <div id="tasks-container" class="mt-3">
+            <article class="task-container border border-2 rounded-2 p-3">
+              <h4>Titulo de la tarea</h4>
+              <hr />
+              <p>Descripción de la tarea</p>
+            </article>
+>>>>>>> 4d09d48252d166b5d120c16983d4812f06bd5ed5
           </div>
         </div>
       </nav>

@@ -96,11 +96,16 @@
             <div class="container">
               <form
                 action=""
-                class="w-50 border border-2 rounded-3 p-3 card-post"
+                class="tarea border border-2 rounded-3 p-4 card-post"
                 id="task-form"
               >
                 <div class="mb-3">
-                  <h4 id="form-title">Agregar una nueva tarea</h4>
+                  <h4 class="title-comentario" id="form-title">
+                    Agregar nuevo comentario
+                  </h4>
+                  <h5 class="sub-title-comentario mt-3">
+                    ¡Únete a la conversación!
+                  </h5>
                 </div>
                 <hr />
                 <div class="mb-3">
@@ -246,7 +251,7 @@ Y LA IMAGEN... -->
                       <div class="img-container">
                         <img src="./assets/img/libro5.jpg" alt="libro" />
                       </div>
-                      <div class="avatar text-center mt-3">
+                      <div class="avatar2 text-center mt-3">
                         <img
                           src="./assets/img/icon.jpg"
                           alt="Avatar"
@@ -255,7 +260,7 @@ Y LA IMAGEN... -->
                         />
                       </div>
                       <div class="registrarse text-center">
-                        <h1 class="title fs-2 mt-2">Iniciar Sesión</h1>
+                        <h1 class="title fs-2 mt-4">Iniciar Sesión</h1>
                       </div>
                       <hr />
                       <div>
@@ -320,7 +325,7 @@ Y LA IMAGEN... -->
                             />
                           </div>
                           <!--? Button GOOGLE -->
-                          <div>
+                          <div class="btn-google">
                             <button class="btn btn-info m-4" id="google-btn">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -360,140 +365,6 @@ Y LA IMAGEN... -->
           </div>
         </div>
       </div>
-      <!--
-      <div
-        class="modal fade"
-        id="signin-modal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content color-modal text-light container-modal">
-            <div class="modal-header">
-              <div id="main-container" class="p-4 container-fluid">
-                <div>
-                  <button
-                    type="button"
-                    class="btn-close mb-4 boton-cerrar"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="card mb-3">
-                  <div class="img-container">
-                    <img
-                      src="https://sapeoplewppro.blob.core.windows.net/media/2019/07/mujer-leyendo-sobre-montana-de-libros.jpg"
-                      alt="libros"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="avatar text-center mt-3">
-                    <img
-                      src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
-                      alt="Avatar"
-                      class="rounded-circle"
-                      style="width: 100px; height: 100px"
-                    />
-                  </div>
-                  <div class="text-center">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Iniciar Sesión
-                    </h1>
-                  </div>
-                  <div class="card-body p-2 m-3">
-                    <form id="signin-form" class="content fs-5">
-                      <div class="mb-3">
-                        <div class="col-auto">
-                          <label for="signin-email" class="form-label"
-                            >Correo</label
-                          >
-                          <div class="input-group">
-                            <div class="input-group-text">
-                              <i class="bi bi-envelope-at-fill"></i>
-                            </div>
-                            <input
-                              type="email"
-                              class="form-control"
-                              placeholder="correo@ejemplo.com"
-                              id="signin-email"
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="mb-3">
-                        <div class="col-auto">
-                          <label for="signin-password" class="form-label"
-                            >Contraseña</label
-                          >
-                          <div class="input-group">
-                            <div class="input-group-text">
-                              <i class="bi bi-lock-fill"></i>
-                            </div>
-                            <input
-                              type="password"
-                              class="form-control"
-                              id="signin-password"
-                              placeholder="Contraseña"
-                              aria-describedby="passwordHelpInline"
-                            />
-                            <div class="input-group-text">
-                              <i
-                                class="bi bi-eye-slash-fill"
-                                id="toggle-eye"
-                              ></i>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div>
-                        <input
-                          type="submit"
-                          class="btn btn-primary m-3"
-                          value="Iniciar Sesión"
-                        />
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <button class="btn btn-info m-4" id="google-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 48 48"
-                >
-                  <path
-                    fill="#FFC107"
-                    d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
-                  ></path>
-                  <path
-                    fill="#FF3D00"
-                    d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
-                  ></path>
-                  <path
-                    fill="#4CAF50"
-                    d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
-                  ></path>
-                  <path
-                    fill="#1976D2"
-                    d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
-                  ></path>
-                </svg>
-                Google
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>-->
 
       <!-- Modal de Registro -->
       <div
@@ -525,7 +396,7 @@ Y LA IMAGEN... -->
                       ></button>
                     </div>
                     <div class="title">
-                      <h1><b>Bienvenidas a nuestra red social</b></h1>
+                      <h1><b>¡Únete a la diversión!</b></h1>
                     </div>
                     <div class="img-bienvenida">
                       <img

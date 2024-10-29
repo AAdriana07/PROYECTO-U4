@@ -16,6 +16,24 @@ incon.addEventListener("click", (e) => {
   }
 });
 
+const imputSignin = document.getElementById("signin-password");
+const inconSignin = document.querySelector("#toggle-eye");
+
+console.log("toggle eye script");
+
+inconSignin.addEventListener("click", (e) => {
+  console.log("toggle eye clicked");
+  if (imputSignin.attributes["type"].value === "password") {
+    imputSignin.attributes["type"].value = "text";
+    inconSignin.classList.remove("bi-eye-slash-fill");
+    inconSignin.classList.add("bi-eye-fill");
+  } else {
+    imputSignin.attributes["type"].value = "password";
+    inconSignin.classList.add("bi-eye-slash-fill");
+    inconSignin.classList.remove("bi-eye-fill");
+  }
+});
+
 const imputConfirm = document.getElementById("confirm-password");
 const inconConfirm = document.querySelector("#toggle-eye2");
 

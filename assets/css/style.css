@@ -24,10 +24,6 @@ html {
   padding: 35px;
 }
 
-.container {
-  text-align: center;
-  align-items: center;
-}
 .task-profile-picture {
   width: 40px;
 }
@@ -63,7 +59,17 @@ html {
   transform: translateX(-50%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+.avatar2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  bottom: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .avatar img {
   width: 100%;
   height: 100%;
@@ -123,7 +129,7 @@ hr {
 .word > p {
   font-family: "Varela Round", sans-serif;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* Ajustes del avatar */
@@ -181,6 +187,18 @@ hr {
     border: 9px solid #1f1e1e;
   }
 
+  .avatar2 {
+    width: 100%;
+    position: absolute;
+    bottom: 370px;
+  }
+
+  .avatar2 img {
+    width: 65px;
+    height: 65px;
+    border: 9px solid #1f1e1e;
+  }
+
   hr {
     border: 1px solid #ffffff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.99);
@@ -221,6 +239,17 @@ hr {
     bottom: 480px;
   }
   .avatar img {
+    width: 70px;
+    height: 70px;
+    border: 9px solid #1f1e1e;
+  }
+
+  .avatar2 {
+    width: 100%;
+    position: absolute;
+    bottom: 365px;
+  }
+  .avatar2 img {
     width: 70px;
     height: 70px;
     border: 9px solid #1f1e1e;
@@ -271,6 +300,17 @@ hr {
     border: 9px solid #1f1e1e;
   }
 
+  .avatar2 {
+    width: 100%;
+    position: absolute;
+    bottom: 360px;
+  }
+  .avatar2 img {
+    width: 70px;
+    height: 70px;
+    border: 9px solid #1f1e1e;
+  }
+
   hr {
     border: 1px solid #ffffff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.99);
@@ -294,11 +334,16 @@ hr {
 
 /*100vh*/
 
-btn-close {
+.btn-close {
   flex-direction: row;
   align-items: flex-end;
 }
 
+.btn-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*max-width: 480px
 
 max-width: 900px

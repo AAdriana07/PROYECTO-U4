@@ -10,27 +10,47 @@
   background-color: rgb(255, 255, 255);
   color: black;
   padding-top: 50px;
-  gap: 2%;
   width: 100%;
   box-sizing: border-box;
   min-width: 400px;
 }
 
+.container {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-weight: 700;
+  color: rgb(0, 59, 110);
+}
+
+.tarea {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.title-comentario {
+  font-size: medium;
+  font-weight: 900;
+}
+
+.sub-title-comentario {
+  font-weight: 800;
+  font-size: larger;
+}
+
 .session-one,
 .session-two {
   flex: 1;
-  background-color: #d3b1c2;
+  background-color: #a06868;
   margin: 20px;
   border-radius: 10px;
 }
-/*
-.session-one {
-  width: 40%;
-}
 
 .session-two {
-  width: 55%;
-}*/
+  padding: 25px 0 25px 0;
+}
 
 .task-container {
   background-color: #fffaf9;

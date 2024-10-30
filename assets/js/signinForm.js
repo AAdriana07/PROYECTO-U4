@@ -37,6 +37,9 @@ signInForm.addEventListener("submit", async (e) => {
     // Mostrar mensaje de error
     if (error.code === "auth/invalid-credential") {
       showMessage("Credenciales incorrectas", "error");
+    }
+    if (error.code === "auth/invalid-email") {
+      showMessage("Iniciando sesión", "success");
     } else {
       showMessage(error.code, "error");
     }

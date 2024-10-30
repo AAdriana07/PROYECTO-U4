@@ -138,6 +138,7 @@ export function showComments(postId) {
               comment.userImage ? comment.userImage : "./assets/img/icono.png"
             }" alt="${comment.userName}" />
             <p class="m-0">${comment.userName}</p>
+            <i class="bi bi-globe"></i>
             <p class="m-0 gap-5">${comment.timeData}</p>
         </header>
         <hr />

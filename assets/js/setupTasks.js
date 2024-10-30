@@ -94,7 +94,7 @@ export const setupTasks = (user) => {
         <header class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center gap-3">
             <img class="task-profile-picture rounded-circle" src="${
-              data.userImage ? data.userImage : "./assets/img/perfil.png"
+              data.userImage ? data.userImage : "./assets/img/icono.png"
             }" alt="${data.userName}" />
             <i class="bi bi-chat-square-text"></i>
             <p class="m-0"><b>${data.userName}</b></p>

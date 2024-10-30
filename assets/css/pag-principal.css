@@ -4,10 +4,22 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(https://i.pinimg.com/564x/60/23/5e/60235ef25f4828102fe000bf60b4f580.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  /*https://i.pinimg.com/564x/01/59/d7/0159d74c5a85c59dba82afca1ee38f62.jpg*/
+}
 .general {
   display: flex;
   flex-direction: row;
-  background-color: rgb(255, 255, 255);
+  background-image: url(https://i.pinimg.com/564x/23/05/94/2305946e60a1392aaaf43cdc4e2ef1f5.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   color: black;
   padding-top: 70px;
   width: 100%;

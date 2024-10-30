@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(https://i.pinimg.com/564x/60/23/5e/60235ef25f4828102fe000bf60b4f580.jpg);
+  background-image: url(https://files.oaiusercontent.com/file-ULSyPDJfu99C3OLsS8JY1aKD?se=2024-10-30T23%3A30%3A37Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D6880c650-ea09-4d77-93aa-7ae3f57a328e.webp&sig=bBcdiQtMZ6lfAQj4uRx0y%2BZE2FBdLUfS4jTrSjRVCc0%3D);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -17,7 +17,7 @@ body {
   display: flex;
   height: 100vh;
   flex-direction: row;
-  background-image: url(https://i.pinimg.com/564x/67/dc/42/67dc42d2ca7608a4e2edff62053b0816.jpg);
+  background-image: url(https://media.istockphoto.com/id/532412049/es/foto/cielo-de-noche-con-estrellas-y-nubes.jpg?s=2048x2048&w=is&k=20&c=H7R4w8TBD9kXSM1mclIlqhoizc9ohV7nnXHnD8NoN0w=);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -59,7 +59,7 @@ body {
 .session-one,
 .session-two {
   flex: 1;
-  background-color: #f8f9ffe6;
+  background-color: rgba(255, 255, 255, 0.8);
   margin: 20px;
   border-radius: 10px;
 }

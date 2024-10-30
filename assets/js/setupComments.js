@@ -122,14 +122,18 @@ export const setupComments = (user) => {
 export function showComments(postId) {
   let commentsHtml = "";
 
+  //console.log(`Post id ${postId}`);
+
   commentsData.forEach((comment) => {
+    //console.log(`Post id ${postId} === ${comment.postId}`);
+
     if (comment.postId === postId) {
       commentsHtml += `
       <article class="comment-container border border-2 rounded-2 p-3 my-3 text-light">
         <header class="d-flex justify-content-between">
           <div class="d-flex align-items-center gap-3">
             <img class="task-profile-picture rounded-circle" src="${
-              comment.userImage ? comment.userImage : "./assets/img/perfil.png"
+              comment.userImage ? comment.userImage : "./assets/img/icono.png"
             }" alt="${comment.userName}" />
             <p class="m-0">${comment.userName}</p>
             <p class="m-0 gap-5">${comment.timeData}</p>

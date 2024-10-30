@@ -14,6 +14,8 @@ html {
 }
 
 .navbar {
+  background-color: #1d3557;
+  color: #ffffff;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -42,6 +44,8 @@ html {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .iniciar {
@@ -59,6 +63,7 @@ html {
   transform: translateX(-50%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .avatar2 {
   width: 80px;
   height: 80px;
@@ -70,6 +75,7 @@ html {
   transform: translateX(-50%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .avatar img {
   width: 100%;
   height: 100%;
@@ -85,17 +91,21 @@ hr {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.99);
 }
 
-/*Registsr sesión*/
+/*! Registsr sesión */
 .close {
   text-align: left;
 }
+
 .modal-content {
+  background-color: #457b9d;
   padding: 10px;
 }
 
 .modal-header,
 .modal-body {
   margin-bottom: 15px;
+  background-color: #457b9d;
+  /*background-color: #fffaf9;*/
 }
 
 .modal-body .form-control {
@@ -108,11 +118,11 @@ hr {
 }
 
 /* Hacer que el modal sea más grande */
-.modal-dialog {
+/*.modal-dialog {
   max-width: 1300px;
   min-width: 30px;
   margin: 0 auto;
-}
+}*/
 .title > h1 {
   font-family: "Chewy", system-ui;
   font-size: 35px;
@@ -130,6 +140,18 @@ hr {
   font-family: "Varela Round", sans-serif;
   font-weight: 800;
   font-size: 12px;
+}
+
+.card-bienvenida {
+  background-color: #fffaf9;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #fffaf9;
+  border-left: 2px solid #000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* Ajustes del avatar */

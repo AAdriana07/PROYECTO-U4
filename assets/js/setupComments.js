@@ -129,7 +129,7 @@ export function showComments(postId) {
 
     if (comment.postId === postId) {
       commentsHtml += `
-      <article class="comment-container border border-2 rounded-2 p-3 my-3 text-light">
+      <article class="comment-container border border-2 rounded-2 p-3 my-3">
         <header class="d-flex justify-content-between">
           <div class="d-flex align-items-center gap-3">
             <img class="task-profile-picture rounded-circle" src="${

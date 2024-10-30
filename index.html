@@ -31,7 +31,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid px-4">
           <a class="navbar-brand" href="index.html"
             ><i class="bi bi-bookmark-heart-fill"></i> LITERATURE AND TEA</a
@@ -82,7 +82,7 @@
       <div class="general text-dark" id="feed-container">
         <div class="session-one">
           <main id="main-container" class="one p-5">
-            <div class="card-perfil">
+            <div class="card-perfil p-4">
               <p id="saludo"></p>
               <p>
                 Aqui se le puede añadir la foto y una pequeña descripción Lorem
@@ -139,9 +139,9 @@
                 <div class="mb-1">
                   <input
                     type="submit"
-                    value="Crear tarea"
+                    value="Publicar"
                     id="btn-agregar"
-                    class="btn btn-warning"
+                    class="btn btn-primary btn-crear mt-3"
                   />
                 </div>
               </form>
@@ -169,7 +169,7 @@
               >
                 <!-- Contenedor que incluye tanto el formulario como la bienvenida -->
                 <div
-                  class="d-flex flex-column flex-lg-row align-items-center justify-content-between"
+                  class="d-flex flex-column flex-lg-row align-items-center justify-content-between card-bienvenida"
                 >
                   <!-- Bienvenida -->
                   <div class="text text-dark">
@@ -209,7 +209,7 @@
                     </div>
                   </div>
                   <div class="col-12 col-lg-6">
-                    <div class="card bg-dark text-light">
+                    <div class="card">
                       <div class="img-container">
                         <img src="./assets/img/libro5.jpg" alt="libro" />
                       </div>
@@ -230,7 +230,7 @@
                           ¡Ingresa a nuestra comunidad!
                         </h1>
                       </div>
-                      <div class="card-body p-4">
+                      <div class="card-body p-4 modal-sesion">
                         <form id="signin-form" class="content fs-5">
                           <div class="mb-3">
                             <div class="col-auto">
@@ -345,7 +345,7 @@
               >
                 <!-- Contenedor que incluye tanto el formulario como la bienvenida -->
                 <div
-                  class="d-flex flex-column flex-lg-row align-items-center justify-content-between"
+                  class="d-flex flex-column flex-lg-row align-items-center justify-content-between card-bienvenida"
                 >
                   <!-- Bienvenida -->
                   <div class="text text-dark">
@@ -386,7 +386,7 @@
                   </div>
                   <!--Formulario de registrarse-->
                   <div class="col-12 col-lg-6">
-                    <div class="card bg-dark text-light">
+                    <div class="card">
                       <div class="img-container">
                         <img src="./assets/img/libro5.jpg" alt="libro" />
                         <!--<img
@@ -514,9 +514,6 @@
                               value="Registrarse"
                             />
                           </div>
-                          <div class="session text-center mt-3">
-                            <a href="" class="iniciar">Iniciar sesión</a>
-                          </div>
                         </form>
                       </div>
                     </div>
@@ -537,7 +534,7 @@
         aria-hidden="true"
       >
         <div class="modal-dialog modal-dialog-centered modal-comentario">
-          <div class="modal-content modal-content-comment bg-dark text-light">
+          <div class="modal-content modal-content-comment">
             <div class="modal-body modal-body-comment">
               <div class="form-comment">
                 <form
@@ -545,14 +542,14 @@
                   class="border border-2 rounded-3 p-3 formulario-comentario"
                   id="comment-form"
                 >
-                  <div class="mb-3 bg-dark text-light">
+                  <div class="mb-3">
                     <h4>Añade un comentario</h4>
                   </div>
                   <hr />
                   <div class="mb-3">
                     <label for="description-comment" class="form-label"></label>
                     <textarea
-                      class="form-control bg-dark text-light"
+                      class="form-control"
                       rows="3"
                       id="description-comment"
                       placeholder="Hoy haré..."
@@ -575,10 +572,10 @@
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-cerrar"
                 data-bs-dismiss="modal"
               >
-                Close
+                Cerrar
               </button>
             </div>
 

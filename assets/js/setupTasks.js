@@ -6,6 +6,7 @@ import {
   getTask,
 } from "./firebase.js";
 import { showMessage } from "./toastMessage.js";
+import { showComments } from "./setupComments.js";
 
 // STORAGE 28/20
 import { uploadImage } from "./firebase.js";
@@ -55,13 +56,13 @@ export const setupTasks = (user) => {
           imageUrl //Guarda la URL de la imagen en la BD
         );
         // Mostrar mensaje de éxito
-        showMessage("Tarea creada", "success");
+        showMessage("Publicación creada", "success");
         // Limpiar el formulario
       } else {
         // Actualizar tarea
         await updateTask(editId, { title, description, timeData, imageUrl });
         // Mostrar mensaje de éxito
-        showMessage("Tarea actualizada", "success");
+        showMessage("Publicación actualizada", "success");
 
         // Cambiar el estado de edición
         editStatus = false;
@@ -70,7 +71,7 @@ export const setupTasks = (user) => {
 
         // Cambiamos lo que muestra el formulario
         document.getElementById("form-title").innerHTML =
-          "Agregar una nueva tarea";
+          "Agregar una nueva publicación";
         taskForm["btn-agregar"].value = "Crear tarea";
       }
 
@@ -153,7 +154,7 @@ export const setupTasks = (user) => {
         editId = doc.id;
 
         // Cambiamos lo que muestra el formulario
-        document.getElementById("form-title").innerHTML = "Editar tarea";
+        document.getElementById("form-title").innerHTML = "Editar publicación";
         taskForm["btn-agregar"].value = "Guardar cambios";
       });
     });
@@ -176,7 +177,7 @@ export const setupTasks = (user) => {
     btnsEliminar.forEach((btn) => {
       btn.addEventListener("click", ({ target: { dataset } }) => {
         deleteTask(dataset.id);
-        showMessage("Tarea eliminada", "success");
+        showMessage("Publicación eliminada", "success");
       });
     });
   });

@@ -72,7 +72,7 @@ export const setupTasks = (user) => {
         // Cambiamos lo que muestra el formulario
         document.getElementById("form-title").innerHTML =
           "Agregar una nueva publicación";
-        taskForm["btn-agregar"].value = "Publicar";
+        taskForm["btn-agregar"].value = "Crear tarea";
       }
 
       // Limpiar el formulario
@@ -95,9 +95,11 @@ export const setupTasks = (user) => {
         <header class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center gap-3">
             <img class="task-profile-picture rounded-circle" src="${
-              data.userImage ? data.userImage : "./assets/img/icono.png"
+              data.userImage ? data.userImage : "./assets/img/perfil.png"
             }" alt="${data.userName}" />
-            <p class="m-0">${data.userName}</p>
+            <i class="bi bi-chat-square-text"></i>
+            <p class="m-0"><b>${data.userName}</b></p>
+            <i class="bi bi-globe"></i>
             <p class="m-0 gap-5">${data.timeData}</p>
           </div>
           ${
@@ -117,6 +119,7 @@ export const setupTasks = (user) => {
         <hr />
         <h4>${data.title}</h4>
         <p>${data.description}</p>
+        <!--STORAGE 28/10}-->
         ${
           data.imageUrl
             ? `<img src="${data.imageUrl}" alt="Tarea imagen" class="task-image" />`

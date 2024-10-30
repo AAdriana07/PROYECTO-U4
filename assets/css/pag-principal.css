@@ -119,7 +119,11 @@ hr {
   background-color: #fffaf9;
   border-radius: 6px;
 }
+.libro{
+  width: 50px;
+  
 
+}
 #btn-agregar {
   font-size: 15px;
   color: white;

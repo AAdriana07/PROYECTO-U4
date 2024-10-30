@@ -104,8 +104,8 @@ export const setupTasks = (user) => {
           ${
             user.email === data.userEmail
               ? `<div>
-            <button class="btn btn-editar" data-id="${doc.id}"><i class="bi bi-pencil-fill"></i></button>
-            <button class="btn btn-eliminar" data-id="${doc.id}"><i class="bi bi-trash3-fill"></i></button>
+            <button class="btn btn-editar btn-primary btn1" data-id="${doc.id}"><i class="bi bi-pencil-fill"></i></button>
+            <button class="btn btn-eliminar btn-primary btn1" data-id="${doc.id}"><i class="bi bi-trash3-fill"></i></button>
           </div>`
               : `<div></div>`
           }
@@ -121,13 +121,23 @@ export const setupTasks = (user) => {
         }
         <hr />
         
-        <button type="button" class="btn btn-comentar" data-id="${
+        <button type="button" class="btn btn-comentar btn-primary btn2" data-id="${
           doc.id
         }" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <i class="bi bi-chat-square-dots"></i></button>
+            <i class="bi bi-chat-square-text-fill"></i></button>
+        
       </article>
       `;
     });
+    /*
+    <input
+          type="submit"
+          value="No hay comentarios"
+          id="btn-comentarios"
+          data-id="${doc.id}"
+          class="btn btn-primary"
+        />
+    */
 
     // Mostrar las tareas en el DOM
     tasksContainer.innerHTML = tasksHtml;

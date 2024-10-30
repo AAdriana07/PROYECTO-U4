@@ -125,9 +125,19 @@ export const setupTasks = (user) => {
           doc.id
         }" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="bi bi-chat-square-text-fill"></i></button>
+        
       </article>
       `;
     });
+    /*
+    <input
+          type="submit"
+          value="No hay comentarios"
+          id="btn-comentarios"
+          data-id="${doc.id}"
+          class="btn btn-primary"
+        />
+    */
 
     // Mostrar las tareas en el DOM
     tasksContainer.innerHTML = tasksHtml;

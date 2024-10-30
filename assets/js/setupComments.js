@@ -121,6 +121,7 @@ export const setupComments = (user) => {
 
 export function showComments(postId) {
   let commentsHtml = "";
+  //let commentCount = 0;
 
   //console.log(`Post id ${postId}`);
 
@@ -128,6 +129,7 @@ export function showComments(postId) {
     //console.log(`Post id ${postId} === ${comment.postId}`);
 
     if (comment.postId === postId) {
+      //commentCount++;
       commentsHtml += `
       <article class="comment-container border border-2 rounded-2 p-3 my-3">
         <header class="d-flex justify-content-between">
@@ -146,4 +148,12 @@ export function showComments(postId) {
   });
 
   commentsContainer.innerHTML = commentsHtml;
+  /*
+  const button = document.querySelector(
+    `#btn-comentarios[data-id="${postId}"]`
+  );
+  if (button) {
+    button.value =
+      commentCount > 0 ? `${commentCount} Comentarios` : "No hay comentarios";
+  }*/
 }

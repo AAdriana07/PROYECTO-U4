@@ -1,5 +1,5 @@
 const imput = document.getElementById("signup-password");
-const incon = document.querySelector("#toggle-eye");
+const incon = document.querySelector("#toggle-eyec");
 
 console.log("toggle eye script");
 

@@ -11,12 +11,14 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  background-color: rgb(0, 2, 21);
 }
 
 .text {
@@ -28,6 +30,9 @@ html {
   width: 40px;
 }
 
+.task-container {
+  background-color: black;
+}
 .caja {
   background-color: rgba(28, 90, 84, 0.98);
 }
@@ -116,7 +121,7 @@ hr {
 .title > h1 {
   font-family: "Chewy", system-ui;
   font-size: 35px;
-  color: #27898e;
+  color: rgb(0, 2, 21);
 }
 
 .subtitle2 > h2 {
@@ -166,6 +171,11 @@ hr {
   border-radius: 10px;
 }
 
+.card {
+  background-color: rgb(0, 2, 21);
+  color: rgb(255, 255, 255);
+}
+
 @media (min-width: 991px) {
   .modal-dialog {
     max-width: 1300px;
@@ -195,7 +205,7 @@ hr {
   .avatar img {
     width: 65px;
     height: 65px;
-    border: 9px solid #1f1e1e;
+    border: 9px solid rgb(0, 2, 21);
   }
 
   .avatar2 {
@@ -207,7 +217,7 @@ hr {
   .avatar2 img {
     width: 65px;
     height: 65px;
-    border: 9px solid #1f1e1e;
+    border: 9px solid rgb(0, 2, 21);
   }
 
   hr {
@@ -252,7 +262,7 @@ hr {
   .avatar img {
     width: 70px;
     height: 70px;
-    border: 9px solid #1f1e1e;
+    border: 9px solid rgb(0, 2, 21);
   }
 
   .avatar2 {
@@ -263,7 +273,7 @@ hr {
   .avatar2 img {
     width: 70px;
     height: 70px;
-    border: 9px solid #1f1e1e;
+    border: 9px solid rgb(0, 2, 21);
   }
 
   hr {
@@ -308,7 +318,7 @@ hr {
   .avatar img {
     width: 70px;
     height: 70px;
-    border: 9px solid #1f1e1e;
+    border: 9px solid rgb(0, 2, 21);
   }
 
   .avatar2 {
@@ -319,7 +329,7 @@ hr {
   .avatar2 img {
     width: 70px;
     height: 70px;
-    border: 9px solid #1f1e1e;
+    border: 9px solid rgb(0, 2, 21);
   }
 
   hr {

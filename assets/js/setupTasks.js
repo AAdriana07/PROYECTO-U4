@@ -6,6 +6,7 @@ import {
   getTask,
 } from "./firebase.js";
 import { showMessage } from "./toastMessage.js";
+import { showComments } from "./setupComments.js";
 
 // STORAGE 28/20
 import { uploadImage } from "./firebase.js";
@@ -55,13 +56,13 @@ export const setupTasks = (user) => {
           imageUrl //Guarda la URL de la imagen en la BD
         );
         // Mostrar mensaje de éxito
-        showMessage("Tarea creada", "success");
+        showMessage("Publicación creada", "success");
         // Limpiar el formulario
       } else {
         // Actualizar tarea
         await updateTask(editId, { title, description, timeData, imageUrl });
         // Mostrar mensaje de éxito
-        showMessage("Tarea actualizada", "success");
+        showMessage("Publicación actualizada", "success");
 
         // Cambiar el estado de edición
         editStatus = false;
@@ -70,7 +71,7 @@ export const setupTasks = (user) => {
 
         // Cambiamos lo que muestra el formulario
         document.getElementById("form-title").innerHTML =
-          "Agregar una nueva tarea";
+          "Agregar una nueva publicación";
         taskForm["btn-agregar"].value = "Crear tarea";
       }
 
@@ -94,24 +95,20 @@ export const setupTasks = (user) => {
         <header class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center gap-3">
             <img class="task-profile-picture rounded-circle" src="${
-              data.userImage ? data.userImage : "./assets/img/perfil.png"
+              data.userImage ? data.userImage : "./assets/img/icono.png"
             }" alt="${data.userName}" />
-            <p class="m-0">${data.userName}</p>
+            <p class="m-0"><b>${data.userName}</b></p>
+            <i class="bi bi-globe"></i>
             <p class="m-0 gap-5">${data.timeData}</p>
           </div>
           ${
             user.email === data.userEmail
               ? `<div>
-            <button class="btn btn-info btn-editar" data-id="${doc.id}"><i class="bi bi-pencil-fill"></i> Editar</button>
-            <button class="btn btn-danger btn-eliminar" data-id="${doc.id}"><i class="bi bi-trash3-fill"></i> Eliminar</button>
+            <button class="btn btn-editar btn-primary btn1" data-id="${doc.id}"><i class="bi bi-pencil-fill"></i></button>
+            <button class="btn btn-eliminar btn-primary btn1" data-id="${doc.id}"><i class="bi bi-trash3-fill"></i></button>
           </div>`
               : `<div></div>`
           }
-          <button type="button" class="btn btn-primary btn-comentar" data-id="${
-            doc.id
-          }" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <i class="bi bi-chat-square-dots"></i> Comentar
-            </button>
         </header>
         <hr />
         <h4>${data.title}</h4>
@@ -122,9 +119,25 @@ export const setupTasks = (user) => {
             ? `<img src="${data.imageUrl}" alt="Tarea imagen" class="task-image" />`
             : ""
         }
+        <hr />
+        
+        <button type="button" class="btn btn-comentar btn-primary btn2" data-id="${
+          doc.id
+        }" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-chat-square-text-fill"></i></button>
+        
       </article>
       `;
     });
+    /*
+    <input
+          type="submit"
+          value="No hay comentarios"
+          id="btn-comentarios"
+          data-id="${doc.id}"
+          class="btn btn-primary"
+        />
+    */
 
     // Mostrar las tareas en el DOM
     tasksContainer.innerHTML = tasksHtml;
@@ -151,7 +164,7 @@ export const setupTasks = (user) => {
         editId = doc.id;
 
         // Cambiamos lo que muestra el formulario
-        document.getElementById("form-title").innerHTML = "Editar tarea";
+        document.getElementById("form-title").innerHTML = "Editar publicación";
         taskForm["btn-agregar"].value = "Guardar cambios";
       });
     });
@@ -174,7 +187,7 @@ export const setupTasks = (user) => {
     btnsEliminar.forEach((btn) => {
       btn.addEventListener("click", ({ target: { dataset } }) => {
         deleteTask(dataset.id);
-        showMessage("Tarea eliminada", "success");
+        showMessage("Publicación eliminada", "success");
       });
     });
   });

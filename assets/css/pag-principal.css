@@ -119,10 +119,8 @@ hr {
   background-color: #fffaf9;
   border-radius: 6px;
 }
-.libro{
+.libro {
   width: 50px;
-  
-
 }
 #btn-agregar {
   font-size: 15px;
@@ -144,9 +142,6 @@ hr {
 #comment-form {
   background-color: #fffaf9;
   width: 420px;
-}
-
-.comment-container {
 }
 
 .form-comment {

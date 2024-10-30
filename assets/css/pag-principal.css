@@ -4,15 +4,30 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(https://i.pinimg.com/564x/60/23/5e/60235ef25f4828102fe000bf60b4f580.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  /*https://i.pinimg.com/564x/01/59/d7/0159d74c5a85c59dba82afca1ee38f62.jpg*/
+}
 .general {
   display: flex;
+  height: 100vh;
   flex-direction: row;
-  background-color: rgb(255, 255, 255);
+  background-image: url(https://i.pinimg.com/564x/23/05/94/2305946e60a1392aaaf43cdc4e2ef1f5.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   color: black;
-  padding-top: 50px;
+  padding-top: 70px;
   width: 100%;
   box-sizing: border-box;
   min-width: 400px;
+  gap: 2%;
 }
 
 .container {
@@ -27,7 +42,7 @@
 
 .tarea {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .title-comentario {
@@ -43,13 +58,18 @@
 .session-one,
 .session-two {
   flex: 1;
-  background-color: #a06868;
+  background-color: #457b9d;
   margin: 20px;
   border-radius: 10px;
 }
 
+.session-one {
+  height: 90%;
+  width: 20%;
+}
+
 .session-two {
-  padding: 25px 0 25px 0;
+  height: 100vh;
 }
 
 .task-container {
@@ -64,7 +84,7 @@
 }
 
 #feed-container {
-  background-color: #ebe6ea;
+  background-color: #fffaf9;
 }
 
 hr {
@@ -76,24 +96,167 @@ hr {
 .botones {
   text-align: right;
 }
+/*
+.btn1 {
+  border: 1px solid #000;
+}
 
+.btn2 {
+  border: 1px solid #000;
+}
+
+.btn1:hover {
+  border: 1px solid #000;
+}
+
+.btn2:hover {
+  border: 1px solid #000;
+}
+*/
 .card-perfil {
   padding: 10px;
   background-color: #fffaf9;
   border-radius: 6px;
 }
 
+#btn-agregar {
+  font-size: 15px;
+  color: white;
+  width: 100%;
+}
+
+/*TODO:Comentario*/
+
+.modal-comentario {
+  max-width: 500px;
+}
+
+.modal-content-comment {
+  background-color: #457b9d;
+  border-radius: 10px;
+}
+
+#comment-form {
+  background-color: #fffaf9;
+  width: 420px;
+}
+
+.form-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.btn-cerrar {
+  font-size: 15px;
+  background-color: #1d3557;
+  color: white;
+  width: 70px;
+}
+
+.btn-cerrar:hover {
+  background-color: #172b46;
+  font-size: 15px;
+  color: white;
+  width: 70px;
+}
+
+#btn-agregar-comentario {
+  font-size: 15px;
+  color: white;
+  width: 100%;
+}
+
+.comment-container {
+  background-color: #fffaf9;
+  /*width: 400px;*/
+  width: 100%;
+}
+/* Centra los comentarios */
+
+#comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/*responsive*/
 @media (min-width: 991px) {
-  .text {
-    padding: 0 45px 0 0;
+  body {
+    font-size: small;
+  }
+  .general {
+    gap: 2%;
+    width: 100%;
+  }
+
+  .session-one {
+    position: sticky;
+    margin: 0 0 0 5%;
+    height: 550px;
+    overflow: hidden;
+    width: 20%;
+  }
+
+  .session-two {
+    flex-grow: 1;
+    overflow: auto;
+    height: 97%;
+    padding: 25px 0 25px 0;
+    margin: 0 5% 0 0;
+    width: 100%;
+  }
+
+  .session-two::-webkit-scrollbar {
+    display: none;
   }
 }
 
 @media (max-width: 991px) {
+  .general {
+    gap: 2%;
+    width: 100%;
+  }
+
+  .session-one {
+    margin: 0 0 0 3%;
+    height: 550px;
+  }
+
+  .session-two {
+    padding: 25px 0 25px 0;
+    margin: 0 3% 0 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 550px) {
   .general {
     flex-direction: column;
+    height: auto;
+    gap: 1%;
+  }
+  .session-one {
+    margin: 1%;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .container {
+    height: 50px;
+  }
+  .session-two {
+    display: inline-block;
+    padding: 25px 0 25px 0;
+    margin: 1%;
+    width: 100%;
+    height: auto;
+    overflow: auto;
   }
 }

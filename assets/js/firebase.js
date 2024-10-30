@@ -89,7 +89,7 @@ export const createComments = (
   userImage,
   userEmail,
   timeData,
-  imageUrl
+  postId
 ) =>
   //TODO Aquí se añade todo lo que quieres que aparezca
   addDoc(collection(db, "comments"), {
@@ -98,7 +98,7 @@ export const createComments = (
     userImage,
     userEmail,
     timeData,
-    imageUrl,
+    postId,
   });
 
 export const onGetComments = (callback) =>

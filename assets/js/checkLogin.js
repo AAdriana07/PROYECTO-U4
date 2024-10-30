@@ -14,7 +14,7 @@ export const checkLogin = (user) => {
 
     //Mostramos el main conatiner
     feedContainer.style.display = "flex";
-    saludo.textContent = `Bienvenid@ ${user.email}`;
+    saludo.textContent = `Bienvenid@ ${user.displayName || user.email}`;
 
     // Cargamos las tareas
     setupTasks(user);

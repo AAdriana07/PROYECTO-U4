@@ -97,7 +97,6 @@ export const setupTasks = (user) => {
             <img class="task-profile-picture rounded-circle" src="${
               data.userImage ? data.userImage : "./assets/img/icono.png"
             }" alt="${data.userName}" />
-            <i class="bi bi-chat-square-text"></i>
             <p class="m-0"><b>${data.userName}</b></p>
             <i class="bi bi-globe"></i>
             <p class="m-0 gap-5">${data.timeData}</p>
@@ -105,16 +104,11 @@ export const setupTasks = (user) => {
           ${
             user.email === data.userEmail
               ? `<div>
-            <button class="btn btn-info btn-editar" data-id="${doc.id}"><i class="bi bi-pencil-fill"></i> Editar</button>
-            <button class="btn btn-danger btn-eliminar" data-id="${doc.id}"><i class="bi bi-trash3-fill"></i> Eliminar</button>
+            <button class="btn btn-editar" data-id="${doc.id}"><i class="bi bi-pencil-fill"></i></button>
+            <button class="btn btn-eliminar" data-id="${doc.id}"><i class="bi bi-trash3-fill"></i></button>
           </div>`
               : `<div></div>`
           }
-          <button type="button" class="btn btn-primary btn-comentar" data-id="${
-            doc.id
-          }" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <i class="bi bi-chat-square-dots"></i> Comentar
-            </button>
         </header>
         <hr />
         <h4>${data.title}</h4>
@@ -125,6 +119,12 @@ export const setupTasks = (user) => {
             ? `<img src="${data.imageUrl}" alt="Tarea imagen" class="task-image" />`
             : ""
         }
+        <hr />
+        
+        <button type="button" class="btn btn-comentar" data-id="${
+          doc.id
+        }" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-chat-square-dots"></i></button>
       </article>
       `;
     });
